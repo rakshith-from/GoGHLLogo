@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Primary iMessage blue gradient -->
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5AC8FA;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0040DD;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Orange accent for GHL -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9500;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Inner shine -->
+    <radialGradient id="shine" cx="35%" cy="25%" r="55%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- macOS-style shadow -->
+    <filter id="iconShadow" x="-8%" y="-5%" width="116%" height="125%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#0040DD" flood-opacity="0.35"/>
+    </filter>
+
+    <!-- macOS squircle background -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F0F4FF;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- macOS-style rounded square background (squircle approximation) -->
+  <rect width="512" height="512" rx="112" ry="112" fill="url(#bgGrad)" />
+  <rect width="510" height="510" x="1" y="1" rx="111" ry="111" fill="none" stroke="#D1D5DB" stroke-width="1" stroke-opacity="0.5"/>
+
+  <!-- Large iMessage Chat Bubble - centered and prominent -->
+  <g filter="url(#iconShadow)" transform="translate(256, 230)">
+    <path d="M-145,-105
+             Q-145,-145 -105,-145
+             L105,-145
+             Q145,-145 145,-105
+             L145,55
+             Q145,95 105,95
+             L20,95
+             L-10,140
+             L-30,95
+             L-105,95
+             Q-145,95 -145,55 Z"
+          fill="url(#bubbleGrad)" />
+
+    <!-- Shine overlay -->
+    <path d="M-145,-105
+             Q-145,-145 -105,-145
+             L105,-145
+             Q145,-145 145,-105
+             L145,55
+             Q145,95 105,95
+             L20,95
+             L-10,140
+             L-30,95
+             L-105,95
+             Q-145,95 -145,55 Z"
+          fill="url(#shine)" />
+  </g>
+
+  <!-- "Go" + "GHL" text inside bubble -->
+  <g transform="translate(256, 218)">
+    <text x="-72" y="10" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+          font-size="72" font-weight="900" fill="#FFFFFF" text-anchor="start"
+          letter-spacing="-2">Go</text>
+    <text x="22" y="10" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+          font-size="72" font-weight="900" fill="url(#accentGrad)" text-anchor="start"
+          letter-spacing="-2">GHL</text>
+  </g>
+
+  <!-- Typing indicator dots -->
+  <g transform="translate(222, 268)" opacity="0.85">
+    <circle cx="0" cy="0" r="7.5" fill="#FFFFFF" opacity="0.7"/>
+    <circle cx="27" cy="0" r="7.5" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="54" cy="0" r="7.5" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+
+  <!-- Small green iMessage indicator badge (top-right) -->
+  <g transform="translate(400, 80)">
+    <circle cx="0" cy="0" r="30" fill="#34C759" />
+    <circle cx="0" cy="0" r="29" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-opacity="0.3"/>
+    <!-- Small chat icon inside green badge -->
+    <path d="M-12,-6
+             Q-12,-12 -7,-12
+             L7,-12
+             Q12,-12 12,-6
+             L12,3
+             Q12,9 7,9
+             L2,9
+             L0,14
+             L-2,9
+             L-7,9
+             Q-12,9 -12,3 Z"
+          fill="#FFFFFF" />
+  </g>
+
+  <!-- goghl.ai text at bottom -->
+  <text x="256" y="440" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="20" font-weight="700" fill="#007AFF" text-anchor="middle"
+        letter-spacing="1">goghl.ai</text>
+</svg>

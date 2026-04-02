@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <!-- Primary iMessage blue gradient -->
+    <linearGradient id="bubbleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#5AC8FA;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#007AFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0051D5;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- GoGHL orange accent gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#FF6B00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9500;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Subtle inner glow for the bubble -->
+    <radialGradient id="innerGlow" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.25" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0" />
+    </radialGradient>
+
+    <!-- Drop shadow -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#0051D5" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Soft shadow for text -->
+    <filter id="textShadow" x="-5%" y="-5%" width="110%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Background circle gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F8FBFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8F0FE;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="512" height="512" rx="80" ry="80" fill="url(#bgGrad)" />
+
+  <!-- Subtle border -->
+  <rect width="510" height="510" x="1" y="1" rx="79" ry="79" fill="none" stroke="#007AFF" stroke-opacity="0.1" stroke-width="1"/>
+
+  <!-- Main iMessage Chat Bubble -->
+  <g filter="url(#shadow)" transform="translate(256, 195)">
+    <!-- Bubble body -->
+    <path d="M-120,-85
+             C-120,-85 -120,-85 -120,-85
+             Q-120,-120 -85,-120
+             L85,-120
+             Q120,-120 120,-85
+             L120,45
+             Q120,80 85,80
+             L15,80
+             L-10,115
+             L-25,80
+             L-85,80
+             Q-120,80 -120,45 Z"
+          fill="url(#bubbleGrad)" />
+
+    <!-- Inner highlight/glow -->
+    <path d="M-120,-85
+             Q-120,-120 -85,-120
+             L85,-120
+             Q120,-120 120,-85
+             L120,45
+             Q120,80 85,80
+             L15,80
+             L-10,115
+             L-25,80
+             L-85,80
+             Q-120,80 -120,45 Z"
+          fill="url(#innerGlow)" />
+  </g>
+
+  <!-- GHL text inside bubble -->
+  <g transform="translate(256, 185)">
+    <!-- "Go" text -->
+    <text x="-68" y="8" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+          font-size="62" font-weight="800" fill="#FFFFFF" text-anchor="start"
+          letter-spacing="-1">Go</text>
+    <!-- "GHL" text with slight orange tint -->
+    <text x="18" y="8" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+          font-size="62" font-weight="800" fill="url(#accentGrad)" text-anchor="start"
+          letter-spacing="-1">GHL</text>
+  </g>
+
+  <!-- Three animated-style dots (typing indicator) inside bubble -->
+  <g transform="translate(225, 225)" opacity="0.9">
+    <circle cx="0" cy="0" r="6" fill="#FFFFFF" opacity="0.7"/>
+    <circle cx="22" cy="0" r="6" fill="#FFFFFF" opacity="0.5"/>
+    <circle cx="44" cy="0" r="6" fill="#FFFFFF" opacity="0.3"/>
+  </g>
+
+  <!-- iMessage label with Apple-style design -->
+  <g transform="translate(256, 340)">
+    <!-- Small iMessage icon -->
+    <path d="M-90,-8
+             Q-90,-16 -83,-16
+             L-63,-16
+             Q-56,-16 -56,-8
+             L-56,4
+             Q-56,12 -63,12
+             L-70,12
+             L-74,18
+             L-76,12
+             L-83,12
+             Q-90,12 -90,4 Z"
+          fill="#34C759" />
+
+    <text x="-45" y="8" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+          font-size="22" font-weight="600" fill="#007AFF" text-anchor="start"
+          letter-spacing="1.5">iMESSAGE</text>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="156" y1="365" x2="356" y2="365" stroke="url(#accentGrad)" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+
+  <!-- "for GoHighLevel" tagline -->
+  <text x="256" y="390" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+        font-size="16" font-weight="500" fill="#6B7280" text-anchor="middle"
+        letter-spacing="2">FOR GOHIGHLEVEL</text>
+
+  <!-- goghl.ai domain -->
+  <g transform="translate(256, 430)">
+    <rect x="-55" y="-16" width="110" height="28" rx="14" ry="14" fill="#007AFF" opacity="0.08"/>
+    <text x="0" y="4" font-family="'SF Pro Display', 'Helvetica Neue', Arial, sans-serif"
+          font-size="15" font-weight="700" fill="#007AFF" text-anchor="middle"
+          letter-spacing="0.5">goghl.ai</text>
+  </g>
+
+  <!-- Connection dots - representing integration -->
+  <g opacity="0.4">
+    <circle cx="130" cy="160" r="3" fill="#007AFF"/>
+    <circle cx="115" cy="180" r="2" fill="#5AC8FA"/>
+    <circle cx="382" cy="160" r="3" fill="#FF6B00"/>
+    <circle cx="397" cy="180" r="2" fill="#FF9500"/>
+  </g>
+</svg>
