@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mypen — Logo Preview</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #F0F4F8;
+      padding: 40px;
+      color: #1E3A5F;
+    }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #1E3A5F;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #4A6FA5;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+      gap: 32px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 40px;
+      box-shadow: 0 4px 24px rgba(30,58,95,0.08);
+    }
+    .card.dark-bg {
+      background: #0D1B2A;
+    }
+    .card-label {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #8AA0BD;
+      margin-bottom: 24px;
+    }
+    .dark-bg .card-label { color: #5B7A9A; }
+    .logo-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-row {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: center;
+    }
+    .icon-wrap {
+      text-align: center;
+    }
+    .icon-size-label {
+      font-size: 11px;
+      color: #8AA0BD;
+      margin-top: 10px;
+    }
+    .color-swatches {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+    .swatch {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .swatch-dot {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 2px solid rgba(0,0,0,0.08);
+    }
+    .swatch-info .name {
+      font-size: 13px;
+      font-weight: 600;
+      color: #1E3A5F;
+    }
+    .swatch-info .hex {
+      font-size: 11px;
+      color: #8AA0BD;
+      font-family: monospace;
+    }
+    .section-title {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1E3A5F;
+      margin: 48px 0 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>mypen</h1>
+  <p class="subtitle">Brand Identity — Logo System</p>
+
+  <div class="grid">
+    <!-- Light version -->
+    <div class="card">
+      <div class="card-label">Primary — Light Background</div>
+      <div class="logo-wrap">
+        <img src="mypen-logo.svg" alt="mypen logo" style="max-width:100%; height:auto;">
+      </div>
+    </div>
+
+    <!-- Dark version -->
+    <div class="card dark-bg">
+      <div class="card-label">Reversed — Dark Background</div>
+      <div class="logo-wrap">
+        <img src="mypen-logo-dark.svg" alt="mypen logo dark" style="max-width:100%; height:auto;">
+      </div>
+    </div>
+  </div>
+
+  <p class="section-title">Icon Mark</p>
+  <div class="card" style="max-width: 480px;">
+    <div class="card-label">Standalone Icon — Various Sizes</div>
+    <div class="icon-row">
+      <div class="icon-wrap">
+        <img src="mypen-logo-icon.svg" width="100" height="100" alt="icon 100px">
+        <div class="icon-size-label">100×100</div>
+      </div>
+      <div class="icon-wrap">
+        <img src="mypen-logo-icon.svg" width="64" height="64" alt="icon 64px">
+        <div class="icon-size-label">64×64</div>
+      </div>
+      <div class="icon-wrap">
+        <img src="mypen-logo-icon.svg" width="48" height="48" alt="icon 48px">
+        <div class="icon-size-label">48×48</div>
+      </div>
+      <div class="icon-wrap">
+        <img src="mypen-logo-icon.svg" width="32" height="32" alt="icon 32px">
+        <div class="icon-size-label">32×32</div>
+      </div>
+    </div>
+  </div>
+
+  <p class="section-title">Color Palette</p>
+  <div class="card" style="max-width: 640px;">
+    <div class="color-swatches">
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#1E3A5F;"></div>
+        <div class="swatch-info">
+          <div class="name">Navy Blue</div>
+          <div class="hex">#1E3A5F</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#FF6B00;"></div>
+        <div class="swatch-info">
+          <div class="name">Saffron Orange</div>
+          <div class="hex">#FF6B00</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#4A90D9;"></div>
+        <div class="swatch-info">
+          <div class="name">Sky Blue</div>
+          <div class="hex">#4A90D9</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#FF8C00;"></div>
+        <div class="swatch-info">
+          <div class="name">Amber</div>
+          <div class="hex">#FF8C00</div>
+        </div>
+      </div>
+      <div class="swatch">
+        <div class="swatch-dot" style="background:#0D1B2A; border-color:#ddd;"></div>
+        <div class="swatch-info">
+          <div class="name">Deep Ink</div>
+          <div class="hex">#0D1B2A</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
