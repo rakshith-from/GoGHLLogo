@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0.5" y2="1">
+      <stop offset="0%" stop-color="#5DF591"/>
+      <stop offset="40%" stop-color="#34C759"/>
+      <stop offset="100%" stop-color="#1CA044"/>
+    </linearGradient>
+    <linearGradient id="sh" x1="0.5" y1="0" x2="0.5" y2="0.5">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.4)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <clipPath id="c"><rect x="1" y="1" width="22" height="22" rx="5" ry="5"/></clipPath>
+  </defs>
+  <rect x="1" y="1" width="22" height="22" rx="5" ry="5" fill="url(#bg)"/>
+  <rect x="1" y="1" width="22" height="22" rx="5" ry="5" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="0.5"/>
+  <rect x="1" y="1" width="22" height="11" rx="5" ry="5" fill="url(#sh)" clip-path="url(#c)"/>
+  <path d="M12 5 C7.6 5 4 7.9 4 11.5 C4 13.4 5.1 15.1 6.8 16.2 C6.6 17 5.9 18 5 18.8 C5 18.8 7.1 18.5 8.7 17.4 C9.7 17.9 10.8 18.2 12 18.2 C16.4 18.2 20 15.3 20 11.5 C20 7.9 16.4 5 12 5Z" fill="rgba(255,255,255,0.95)"/>
+</svg>
