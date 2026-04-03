@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- iMessage icon - Black variant -->
+  <!-- Outer chat bubble shape -->
+  <path d="M32 4C16.536 4 4 14.745 4 28c0 7.442 3.894 14.12 10.05 18.725C13.26 51.347 10.5 57.5 6 60c0 0 9.5-1 16.5-6.25C24.88 54.57 28.37 55 32 55c15.464 0 28-10.745 28-25S47.464 4 32 4z" fill="#1C1C1E" stroke="none"/>
+  <!-- Inner highlight for depth -->
+  <ellipse cx="32" cy="26" rx="22" ry="17" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+</svg>
