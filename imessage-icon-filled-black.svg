@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- iMessage icon - Filled black variant (like reference image 2) -->
+  <!-- Rounded square background - black filled -->
+  <rect x="4" y="4" width="112" height="112" rx="24" ry="24" fill="#1C1C1E"/>
+  <!-- Speech bubble - white -->
+  <path d="M60 28C41.222 28 26 40.088 26 55c0 8.284 4.668 15.71 12 20.736C37.2 80.4 34 85.5 29 89c0 0 10.5-0.5 18-5.8C50.2 84.4 54.96 85 60 85c18.778 0 34-12.088 34-27S78.778 28 60 28z" fill="#FFFFFF"/>
+</svg>
